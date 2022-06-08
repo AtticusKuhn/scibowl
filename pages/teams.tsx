@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo"
 import React from "react"
 import MyLink from "../components/MyLink"
 
@@ -41,6 +42,10 @@ const Team: React.FC<TeamProps> = ({ image, members, year, award }) => {
 }
 const Teams: React.FC<{}> = () => {
     return <>
+        <NextSeo
+            title="Past SciBowl Teams"
+            description="Look back on the previous teams of Paly Science Bowl. This Tradition has been going on for at least 20 years."
+        />
         <h1 className="text-center font-bold text-3xl p-xl">Meet the Team(s)</h1>
         <Team
             image="images/2022team.jpg"

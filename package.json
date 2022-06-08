@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "deploy": "NODE_ENV=production next build && next export -o dist && touch dist/.nojekyll && git add dist && git commit -m \"Initial dist subtree commit\" && git subtree push --prefix dist origin gh-pages",
+    "export": "next export -o dist",
+    "deploy": "./build.sh",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
