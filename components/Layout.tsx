@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Button from './Button'
-
+import { path } from "../utils"
 type Props = {
   children?: ReactNode
 }
@@ -39,10 +39,10 @@ const Layout = ({ children }: Props) => {
     <div className={`text-center flex flex-col w-full  bg-primary-100 text-primary-800`}>
       <header className="text-xl">
         <nav className="px-1">
-          <NavLink link="" text="Home" />
-          <NavLink link="about" text="About SciBowl" />
-          <NavLink link="signup" text="Sign Up" />
-          <NavLink link="teams" text="Past Teams" />
+          <NavLink link={path + ""} text="Home" />
+          <NavLink link={path + "about"} text="About SciBowl" />
+          <NavLink link={path + "signup"} text="Sign Up" />
+          <NavLink link={path + "teams"} text="Past Teams" />
           <Button onClickFunc={toggle}>{mode}</Button>
         </nav>
       </header>

@@ -1,7 +1,7 @@
 import Button from "../components/Button"
 import Heading from "../components/Heading"
 import MyLink from "../components/MyLink"
-
+import { path } from "../utils"
 const IndexPage: React.FC<{}> = () => {
   return <>
     <h1 className="text-center font-bold text-3xl p-xl">Paly SciBowl</h1>
@@ -16,8 +16,8 @@ const IndexPage: React.FC<{}> = () => {
           If this sounds interesting to you,
         </p>
         <div className="flex gap-x-1 justify-around	">
-          <Button link="/signup">Sign Up</Button>
-          <Button link="/signup">Learn More</Button>
+          <Button link={path + "signup"}>Sign Up</Button>
+          <Button link={path + "about"}>Learn More</Button>
 
         </div>
       </div>

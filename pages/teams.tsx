@@ -9,10 +9,10 @@ type TeamProps = {
     award?: React.ReactElement,
 }
 const Team: React.FC<TeamProps> = ({ image, members, year, award }) => {
-    return <div>
+    return <div className="h-full">
         <h1 className="text-center font-bold text-2xl p-xl">{year} Team</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 h-72">
-            <div className="w-full h-full bg-primary-300"
+        <div className="grid grid-cols-1 sm:grid-cols-2 h-full">
+            <div className="w-full h-96 bg-primary-300"
                 style={{ backgroundImage: `url("${image}")`, backgroundSize: "cover" }}>
 
             </div>
@@ -24,7 +24,6 @@ const Team: React.FC<TeamProps> = ({ image, members, year, award }) => {
                     <div className="inline-block">
                         {members}
                     </div>
-
                 </div>
                 {award &&
                     <div>

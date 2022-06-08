@@ -3,7 +3,7 @@ export default {
     defaultTitle: "Paly SciBowl",
     additionalLinkTags: [{
         rel: 'icon',
-        href: '/images/logo.png',
+        href: 'images/logo.png',
     }],
     openGraph: {
         type: "Paly SciBowl",
