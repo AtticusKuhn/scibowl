@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: "https://atticuskuhn.github.io",
+    siteUrl: "https://atticuskuhn.github.io/scibowl",
     generateRobotsTxt: true, // (optional)
     // ...other options
 }

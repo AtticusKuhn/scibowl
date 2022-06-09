@@ -13,7 +13,11 @@ const Team: React.FC<TeamProps> = ({ image, members, year, award }) => {
         <h1 className="text-center font-bold text-2xl p-xl">{year} Team</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 h-full">
             <div className="w-full h-96 bg-primary-300"
-                style={{ backgroundImage: `url("${image}")`, backgroundSize: "cover" }}>
+                style={{
+                    backgroundImage: `url("${image}")`, backgroundSize: "cover",
+                    backgroundRepeat: "repeat",
+                    backgroundPosition: "center"
+                }}>
 
             </div>
             <div className=" flex flex-col gap-y-1 px-lg	">
@@ -46,6 +50,10 @@ const Teams: React.FC<{}> = () => {
             description="Look back on the previous teams of Paly Science Bowl. This Tradition has been going on for at least 20 years."
         />
         <h1 className="text-center font-bold text-3xl p-xl">Meet the Team(s)</h1>
+        <p className="text-center">Paly has a long tradition of SciBowl. It goes back at least 9 years to 2013, although
+            it may go back even further. I will have to consult with the ancients to find the
+            first SciBowl team.
+        </p>
         <Team
             image="images/2022team.jpg"
             members="Atticus Kuhn, Ronak Monga, Andrew Tao, Kabir Bhatia, Ryan Hwangbo, Matthew Yang (known as Johnathen Chens), April Wu, Jacob, Mingyuan Yang "

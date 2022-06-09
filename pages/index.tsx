@@ -23,7 +23,11 @@ const IndexPage: React.FC<{}> = () => {
       </div>
       <div className="h-72	">
         <div className="w-full h-full bg-primary-300"
-          style={{ backgroundImage: 'url("images/2022team.jpg")', backgroundSize: "cover" }}>
+          style={{
+            backgroundImage: 'url("images/2022team.jpg")', backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center"
+          }}>
         </div>
         <div>The 2022 Scibowl Team</div>
       </div>
