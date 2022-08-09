@@ -1,5 +1,4 @@
 import Button from "../components/Button"
-import Heading from "../components/Heading"
 import MyLink from "../components/MyLink"
 import { path } from "../utils"
 const IndexPage: React.FC<{}> = () => {
@@ -10,7 +9,7 @@ const IndexPage: React.FC<{}> = () => {
         <p className="p-sm">
           <MyLink href="https://science.osti.gov/wdts/nsb">Scibowl</MyLink> (short for Science Bowl) is a fun team-based competition
           where different schools race to the buzzer in order to answer questions on every topic
-          ranging from curcuits to plants.
+          ranging from circuits to plants.
         </p>
         <p className="m-lg">
           If this sounds interesting to you,
