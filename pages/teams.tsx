@@ -55,6 +55,11 @@ const Teams: React.FC<{}> = () => {
             first SciBowl team.
         </p>
         <Team
+            image="images/2023team.jpg"
+            members="Nathan Jiang, Jonathen Yuen, Jeremy Yuen, Matthew Yang, Atticus Kuhn, Johnathen Chen, Austin Krawczyk, Mingyuan Wang, Forrest Chen"
+            year={2023}
+        />
+        <Team
             image="images/2022team.jpg"
             members="Atticus Kuhn, Ronak Monga, Andrew Tao, Kabir Bhatia, Ryan Hwangbo, Matthew Yang (known as Johnathen Chens), April Wu, Jacob, Mingyuan Yang "
             year={2022}

@@ -8,13 +8,14 @@ const Signup: React.FC<{}> = () => {
         <h1 className="font-bold text-3xl p-3xl text-center">Want to Join SciBowl?</h1>
         <p>
             In order to join SciBowl, you must try out. The tryouts for the {year} season
-            start on September 24, which is in {days} days
+            start on September 18, which is in {days} days. We will send out more
+            information about tryouts via email.
         </p>
         If you want to sign up, please fill out this form, and then we will email you
         <div className="flex align-items-center mx-auto inline-block">
             <iframe
                 className="h-screen w-full"
-                src="https://docs.google.com/forms/d/e/1FAIpQLSf5zXIrkqmPJPOZDaTMXq_cAmPY72sI0B5yY3YPW_8Y_M916A/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSecdzNELd1J74gDaLL-RkHz4KShq0hJMKn4cwLPvrcEjPAAiw/viewform?embedded=true"
                 // width="640"
                 // height="400"
                 frameBorder="0"
