@@ -6,7 +6,7 @@
     "start": "next start",
     "type-check": "tsc",
     "export": "next export -o dist",
-    "deploy": "./build.sh",
+    "deploy": "~/coding/scibowl/build.sh",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

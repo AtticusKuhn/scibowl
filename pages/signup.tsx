@@ -2,13 +2,13 @@ import MyLink from "../components/MyLink";
 
 const Signup: React.FC<{}> = () => {
     const year = new Date().getFullYear();
-    const tryout = new Date(`9-24-${year}`);
+    const tryout = new Date(`9-18-${year}`);
     const days = Math.floor((tryout.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
     return <div className="px-5xl">
         <h1 className="font-bold text-3xl p-3xl text-center">Want to Join SciBowl?</h1>
         <p>
             In order to join SciBowl, you must try out. The tryouts for the {year} season
-            start on September 18, which is in {days} days. We will send out more
+            start on {tryout.toLocaleDateString()}, which is in {days} days. We will send out more
             information about tryouts via email.
         </p>
         If you want to sign up, please fill out this form, and then we will email you
